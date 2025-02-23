@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>INST377 Lab 4</title>
+
+</head>
+
+<body id = "main"> 
+    <header>    
+        <h1 id = "addtext"></h1>
+    </header>
+
+
+    <div class = "container">
+        <div class = "section">
+            <form onsubmit="return alertMe()">
+                <label for="name">Name:</label>
+                <input type="text" id = "name" required="true"> 
+                <input type = "submit" value="Alert Me!">
+            </form>
+        </div>
+
+        <div class = "section">
+            <input type="button" onclick="swapColor()" value = "Change Color">
+        </div>
+    </div>
+
+    <div class = "container">
+        <div class = "section">
+            <form onsubmit = "return validateText()">
+                <label for="validater">Enter Text:</label>
+                <input type="text" id = "validater"> 
+                <input type = "submit" value="Validate Text">
+            </form> 
+        </div>
+
+        <div  class = "section">
+            <input type="button" onclick="addText()" value = "Add Text">
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script> 
